@@ -52,4 +52,3 @@ buttons.forEach(button => {
     });
   });
 });
-
