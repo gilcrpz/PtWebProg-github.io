@@ -226,7 +226,7 @@ body.darkmode .nav a {
   width: 500px;
   height: 500px;
   object-fit: cover;
-  border-radius: 50%;
+  border-radius: 70%;
   animation: float 4s infinite ease-in-out;
   box-shadow: #f57da9 0px 20px 45px -5px;
   transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
@@ -306,11 +306,11 @@ body.darkmode .nav a {
 }
 
 .about-section img {
-  width: 250px;
-  height: 250px;
-  border-radius: 50%;
+ width: 450px;         
+  height: auto;         
+  border-radius: 12px;  
   object-fit: cover;
-  box-shadow: 0 10px 25px rgba(255,154,203,0.4);
+  box-shadow: 0 10px 25px rgba(255, 154, 203, 0.4);
   animation: float 4s ease-in-out infinite;
 }
 
@@ -464,6 +464,9 @@ body.darkmode .github-icon {
 .card-vscode::before { background: linear-gradient(-45deg, #007acc 0%, #1f9cf0 100%); }
 .card-vscode::after  { background: linear-gradient(-45deg, #007acc 0%, #7ecaff 100%); }
 
+.card-visualstudio::before { background: linear-gradient(-45deg, #5c0357 0%, #a6038b 100%); }
+.card-visualstudio::after  { background: linear-gradient(-45deg, #5c0357 0%, #a6038b 100%); }
+
 .card-github::before { background: linear-gradient(-45deg, #1cc2ff 0%, #ff261b 100%); }
 .card-github::after  { background: linear-gradient(-45deg, #1cffa4 0%, #ff01aee6 100%); }
 
@@ -538,6 +541,7 @@ body.darkmode .progress-bar-container {
 .card-csharp .progress-line { background: #239120; }
 .card-mysql .progress-line  { background: #00758f; }
 .card-php .progress-line    { background: #777bb4; }
+.card-visualstudio .progress-line { background: #5c0357; }
 .card-vscode .progress-line { background: #007acc; }
 .card-github .progress-line { background: #1cc2ff; }
 
