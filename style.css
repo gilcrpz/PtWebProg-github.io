@@ -102,7 +102,7 @@ body {
 
 .header, .section, .projects-section, .contact-section, .about-section, footer {
   position: relative;
-  z-index: 10;
+  z-index: 20;
 }
 
 .header {
@@ -239,6 +239,7 @@ body.darkmode .nav a {
   padding: 60px 40px;
   border-radius: 40px;
   margin: 40px 10% 0 10%;
+  margin-bottom: 60px;
   backdrop-filter: blur(16px);
   box-shadow: rgba(31, 38, 135, 0.05) 0px 8px 32px 0px;
   border: 1px solid rgba(255, 255, 255, 0.25);
@@ -914,6 +915,61 @@ footer {
   }
   .nav {
     gap: 16px;
+  }
+}.hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 24px;
+  height: 18px;
+  cursor: pointer;
+}
+
+
+.hamburger span {
+  display: block;
+  height: 3px;
+  width: 100%;
+  background-color: #02386e; 
+  border-radius: 3px;
+  transition: all 0.3s ease;
+}
+
+body.darkmode .hamburger span {
+  background-color: #ff69b4; 
+}
+
+
+@media (max-width: 768px) {
+  .hamburger {
+    display: flex; 
+  }
+}
+@media (max-width: 768px) {
+
+  .nav {
+    position: absolute;
+    right: -100%;
+    top: 65px;
+    background: rgba(255, 230, 240, 0.95); 
+    padding: 20px;
+    flex-direction: column;
+    gap: 20px;
+    transition: 0.3s;
+    border-radius: 8px;
+    width: 200px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  }
+  body.darkmode .nav {
+    background: rgba(10, 37, 64, 0.95);
+  }
+
+  .nav a {
+    color: #02386e;
+  }
+
+  .nav.active { 
+    right: 24px; 
   }
 }
 
